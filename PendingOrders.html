@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" href="css/FrmStyles.css">
+	<style type="text/css">
+		.zebra{
+
+			background-color:grey;
+		}
+	</style>
+	<style>
+		header{
+			position:relative;
+			margin-top: -20px;
+			padding: 0px;
+			width:100%;
+			height:102px;
+			background-color:fuchsia;
+		}
+		.left{
+			float:left;
+		}
+		.right{
+
+			float:right;
+		}
+
+		.style1{
+           width:100px;
+           height:100px;
+		}
+
+		.style2{
+			 width:20px;
+           height:20px;
+		}
+		ul> li
+		{
+			display:inline;
+			margin: 10px;
+		}
+		a{
+			text-decoration:none;
+			 font-size:1.2em;
+		}
+</style>
+</head>
+<body>
+	
+	<header>
+		<div class="left">
+			<img src="images/pastries.jpg" class="style1" alt="Logo">
+			
+		</div>
+
+		<div class="right">
+		  
+		     <figure style="float:right;">
+		     	<img src="images/French.png" alt="FrenchFlag" class="style2">
+		     	<figcaption style="font-size: 0.70em;">Germany</figcaption>
+		     </figure>
+			 
+			<figure style="float:right;">
+					<img src="images/German.png" alt="GermanFlag" class="style2">	
+						<figcaption style="font-size: 0.70em;">France</figcaption>	
+			</figure>
+			
+          
+		</div>
+		 <h1 style="text-align:center; color:blue">Sagar Ratna Bakery</h1>
+	</header>
+ <nav style="margin-top:15px;">
+     	<ul>
+     	<li><a href="PageSemantics.html">Home</a></li>
+     		<li><a href="#">About Us</a></li>
+     		<li><a href="PlaceOrder.html">Order</a></li>
+     		<li><a href="PendingOrders.html">View Orders</a></li>
+     		<li><a href="#">Contact</a></li>
+     	</ul>
+     </nav>
+	<fieldset>
+		<legend>Order Types</legend>
+
+<div>
+		<label>Pending For Today</label>
+		<input type="radio" name="req1" value="pendingToday">
+ </div>
+ <div>
+        <label>Start Date</label>
+<input type="date">
+                <label>End Date</label>
+<input type="date">
+<div>
+<div>
+<input type="button" name="" value="Search">
+</div>
+	</fieldset>
+	
+	
+	<table>
+	<caption style="font-style: Arial;color: blue; font-size: 1.5em;">Pending Orders</caption>
+	<tr>
+	<th>Sl.No</th>
+	<th>Customer Name</th>
+	<th>Mobile Number</th>
+	<th>Item Name</th>
+	<th>Status</th>
+	</tr>
+			<tr>
+				<td>1</td>
+				<td>Ramesh</td>
+				<td>984848848</td>
+				<td>Choclate Brownie</td>
+				<td>Ready</td>
+			</tr>
+			<tr class="zebra">
+				<td>2</td>
+				<td>Piyush</td>
+				<td>934848848</td>
+				<td>Black Forest</td>
+				<td>Pending</td>
+			</tr>
+			<tr>
+				<td>3</td>
+				<td>Ganesh</td>
+				<td>222248848</td>
+				<td>Plum Cake</td>
+				<td>Pending</td>
+			</tr>
+			<tr class="zebra">
+				<td>4</td>
+				<td>Suresh</td>
+				<td>66648848</td>
+				<td>Black Current</td>
+				<td>Ready</td>
+			</tr>
+			<tr>
+				<td>5</td>
+				<td>Rajesh</td>
+				<td>777748848</td>
+				<td>Orange Cake</td>
+				<td>Pending</td>
+			</tr>
+			<tr class="zebra">
+				<td>6</td>
+				<td>Rakesh</td>
+				<td>3234234</td>
+				<td>Mullberry</td>
+				<td>Ready</td>
+			</tr>
+		</table>	
+
+	
+</body>
+</html>

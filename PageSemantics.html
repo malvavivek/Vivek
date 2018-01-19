@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Page Semantics</title>
+	<link rel="stylesheet" href="">
+	<style>
+		header{
+			position:relative;
+			margin-top: -20px;
+			padding: 0px;
+			width:100%;
+			height:102px;
+			background-color:fuchsia;
+		}
+		.left{
+			float:left;
+		}
+		.right{
+
+			float:right;
+		}
+
+		.style1{
+           width:100px;
+           height:100px;
+		}
+
+		.style2{
+			 width:20px;
+           height:20px;
+		}
+		ul> li
+		{
+			display:inline;
+			margin: 10px;
+		}
+		a{
+			text-decoration:none;
+			 font-size:1.2em;
+		}
+
+		#content{
+
+			width:100%;
+			height:400px;
+			background-color:greenyellow;
+		}
+
+        table{
+
+        	border: 2px solid blue;
+        	border-collapse:collapse;
+        	margin-left: auto;
+        	margin-right:auto;
+        }
+
+         th,td{
+         	border: 2px solid blue;
+         }
+
+         figure {
+    display: inline;
+       }
+figure img {
+    vertical-align: top;
+}
+
+	</style>
+</head>
+<body style="background-color: grey;">
+	
+	<header>
+		<div class="left">
+			<img src="images/pastries.jpg" class="style1" alt="Logo">
+			
+		</div>
+
+		<div class="right">
+		  
+		     <figure style="float:right;">
+		     	<img src="images/French.png" alt="FrenchFlag" class="style2">
+		     	<figcaption style="font-size: 0.70em;">Germany</figcaption>
+		     </figure>
+			 
+			<figure style="float:right;">
+					<img src="images/German.png" alt="GermanFlag" class="style2">	
+						<figcaption style="font-size: 0.70em;">France</figcaption>	
+			</figure>
+			
+          
+		</div>
+		 <h1 style="text-align:center; color:blue">Sagar Ratna Bakery</h1>
+	</header>
+
+
+     <nav style="margin-top:15px;">
+     	<ul>
+     	  <li><a href="PageSemantics.html">Home</a></li>
+     		<li><a href="#">About Us</a></li>
+     		<li><a href="PlaceOrder.html">Order</a></li>
+     		<li><a href="PendingOrders.html">View Orders</a></li>
+     		<li><a href="#">Contact</a></li>
+     	</ul>
+     </nav>
+
+<div id="content">
+<section class="left" style="width: 70%;">
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+	<table>
+	 <caption style="font-size: 1.4em;">Price List</caption>
+	<tr>
+		<th>Sl.No</th>
+		<th>Name</th>
+		<th>Rate per Unit</th>
+	</tr>
+		<tr>
+			<td>1</td>
+			<td>Choclate Brownie</td>
+			<td>120.00</td>
+		</tr>
+		<tr>
+			<td>2</td>
+			<td>Birthday Cake</td>
+			<td>320.00</td>
+		</tr>
+		<tr>
+			<td>3</td>
+			<td>Coke</td>
+			<td>20.00</td>
+		</tr>
+	</table>
+</section>
+
+<aside class="right" style="width: 30%;">
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+</aside>
+</div>
+</body>
+</html>

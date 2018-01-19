@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	
+	<title>Place Order</title>
+	<script   src="https://code.jquery.com/jquery-1.12.4.min.js"   integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="   crossorigin="anonymous"></script>
+	<script type="text/javascript" src="
+https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+	<script type="text/javascript" src="polyfiller.js"></script>
+	<script type="text/javascript">
+		$.webshims.polyfill(); 
+$("#dp").datepicker();
+	</script>
+	<link rel="stylesheet" href="css/FrmStyles.css">
+	<script type="text/javascript">
+		
+		function complete(){
+
+			var result = confirm("Are You Sure");
+		}
+	</script>
+	<style>
+		header{
+			position:relative;
+			margin-top: -20px;
+			padding: 0px;
+			width:100%;
+			height:102px;
+			background-color:fuchsia;
+		}
+		.left{
+			float:left;
+		}
+		.right{
+
+			float:right;
+		}
+
+		.style1{
+           width:100px;
+           height:100px;
+		}
+
+		.style2{
+			 width:20px;
+           height:20px;
+		}
+		ul> li
+		{
+			display:inline;
+			margin: 10px;
+		}
+		a{
+			text-decoration:none;
+			 font-size:1.2em;
+		}
+</style>
+</head>
+<body>
+
+<datalist id="cakeList">
+	<option value="BDAY">BirthDayCake</option>
+		<option value="Choc Brow">Choclate Browine</option<option value="Black Curr">Black Current</option>
+		<option value="Black Forest">Black Forest</option>
+
+</datalist>
+	
+	<header>
+		<div class="left">
+			<img src="images/pastries.jpg" class="style1" alt="Logo">
+			
+		</div>
+
+		<div class="right">
+		  
+		     <figure style="float:right;">
+		     	<img src="images/French.png" alt="FrenchFlag" class="style2">
+		     	<figcaption style="font-size: 0.70em;">Germany</figcaption>
+		     </figure>
+			 
+			<figure style="float:right;">
+					<img src="images/German.png" alt="GermanFlag" class="style2">	
+						<figcaption style="font-size: 0.70em;">France</figcaption>	
+			</figure>
+			
+          
+		</div>
+		 <h1 style="text-align:center; color:blue">Sagar Ratna Bakery</h1>
+	</header>
+ <nav style="margin-top:15px;">
+     	<ul>
+     	<li><a href="PageSemantics.html">Home</a></li>
+     		<li><a href="#">About Us</a></li>
+     		<li><a href="PlaceOrder.html">Order</a></li>
+     		<li><a href="PendingOrders.html">View Orders</a></li>
+     		<li><a href="#">Contact</a></li>
+     	</ul>
+     </nav>
+	 <h1>Place Order</h1>
+	<form action="">
+		<table>
+			<tr>
+				<td><label>First Name</label></td>
+				<td><input type="text" name="" style="height: 40px;" required="required"></td>
+			</tr>
+			<tr>
+				<td><label>Phone Number</label></td>
+				<td><input type="tel" name="" value="" placeholder="999-99999999" pattern="\d{3}-\d{8}"></td>
+			</tr>
+			<tr>
+				<td><label>Cake</label></td>
+				<td><input type="text" list="cakeList"></td>
+			</tr>
+			<tr>
+				<td><label>Type</label></td>
+				<td>Egg Less<input type="radio" name="type" value="Eggless">
+				With Egg<input type="radio" value="With Egg" name="type">
+				</td>
+			</tr>
+			<tr>
+				<td><label>Weight</label></td>
+				<td><input type="number" name="" value="" placeholder="" max="5" min="0.5" step=".5"></td>
+			</tr>
+			<tr>
+				<td><label>Color</label></td>
+				<td><input type="color" name="" value="" placeholder=""></td>
+			</tr>
+			<tr>
+				<td><label>Delivery Mode</label></td>
+				<td>
+					<select name="mode">
+						<option value="pup">PickUp</option>
+						<option value="swg">Swiggy</option>
+						<option value="fPd">Food Panda</option>
+						
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td><label>Delivery Date</label></td>
+				<td> <input type="date" name=""></td>
+			</tr>
+			<tr>
+				<td><label>Delivery Time</label></td>
+				<td><input type="time" name="" value="" placeholder=""></td>
+			</tr>
+			<tr>
+				<td><label>Message</label></td>
+				<td><textarea name="" spellcheck="true"></textarea></td>
+			</tr>
+			<tr>
+			<td><input type="reset" name="" value="Clear"></td>
+				<td><input type="submit" name="" value="Order" onclick="complete()"></td>
+				
+			</tr>
+		</table>
+	</form>
+</body>
+</html>
